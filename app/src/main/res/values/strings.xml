@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lulumap</string>
+    <string name="layer">图层</string>
+    <string name="title_activity_map_layer">MapLayerActivity</string>
+</resources>
