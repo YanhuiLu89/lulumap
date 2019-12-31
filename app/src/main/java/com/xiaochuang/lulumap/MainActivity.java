@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     private MapView mMapView = null;
     private BaiduMap mBaiduMap=null;
     private Button mLayerButton=null;
+    private Button mTmc=null;
+    private Button mHeat=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +26,31 @@ public class MainActivity extends AppCompatActivity {
         mLayerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,MapLayerActivity.class);
-                startActivity(intent);
+//                Intent intent=new Intent(MainActivity.this,MapLayerActivity.class);
+//                startActivity(intent);
+                mBaiduMap.getMapType();
+                mBaiduMap.setMapType(BaiduMap.MAP_TYPE_SATELLITE);
+
             }
         });
 
+        mTmc=(Button) findViewById(R.id.tmcButton);
+        mTmc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mBaiduMap.setTrafficEnabled(true);
+
+            }
+        });
+
+        mHeat=(Button) findViewById(R.id.heatButton);
+        mHeat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mBaiduMap.setBaiduHeatMapEnabled(true);
+
+            }
+        });
     }
 
     @Override
