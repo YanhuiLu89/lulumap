@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         //获取地图控件引用
         mMapView = (MapView) findViewById(R.id.bmapView);
         mBaiduMap=mMapView.getMap();
+        mBaiduMap.setMyLocationEnabled(true);
         mLayerButton=(Button) findViewById(R.id.layerButton);
         mLayerButton.setOnClickListener(new View.OnClickListener() {
             @Override
