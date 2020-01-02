@@ -24,15 +24,15 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/layer" />
-    <Button
-        android:id="@+id/tmcButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="路况" />
-    <Button
-        android:id="@+id/heatButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="热力图" />
+<!--    <Button-->
+<!--        android:id="@+id/tmcButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="路况" />-->
+<!--    <Button-->
+<!--        android:id="@+id/heatButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="热力图" />-->
 
 </android.support.constraint.ConstraintLayout>
